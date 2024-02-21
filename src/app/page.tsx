@@ -10,7 +10,8 @@ type Time = {
 
 async function getTime(): Promise<Time> {
 	const res = await fetch(
-		"https://worldtimeapi.org/api/timezone/Europe/Moscow"
+		"https://worldtimeapi.org/api/timezone/Europe/Moscow",
+		{ cache: "no-store" }
 		// { next: { revalidate: 13 } }
 	);
 	return res.json();
