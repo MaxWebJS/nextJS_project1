@@ -16,7 +16,7 @@ async function getTime(): Promise<Time> {
 	return res.json();
 }
 
-const Bits = async ({ params, searchParams }) => {
+const Bits = async () => {
 	// const [time] = await Promise.all([getTime()]);
 	const [time] = await Promise.all([getTime()]);
 	return <h2>{time.datetime}</h2>;
