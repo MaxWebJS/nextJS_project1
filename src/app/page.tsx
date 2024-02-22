@@ -4,11 +4,12 @@
 // 	return <main>Hello!</main>;
 // }
 
-type Time = {
-	// datetime: string;
-};
+// type Time = {
+// datetime: string;
+// };
 
-async function getTime(): Promise<Time> {
+// async function getTime(): Promise<Time> {
+async function getTime() {
 	const res = await fetch(
 		"https://worldtimeapi.org/api/timezone/Europe/Moscow"
 		// { cache: "no-store" }
