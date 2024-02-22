@@ -5,7 +5,7 @@
 // }
 
 type Time = {
-	datetime: string;
+	// datetime: string;
 };
 
 async function getTime(): Promise<Time> {
